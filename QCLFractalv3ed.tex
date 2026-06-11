@@ -1,0 +1,1634 @@
+%  LaTeX support: latex@mdpi.com 
+%  For support, please attach all files needed for compiling as well as the log file, and specify your operating system, LaTeX version, and LaTeX editor.
+%=================================================================
+%\documentclass[journal,article,accept,pdftex,moreauthors]{Definitions/mdpi} 
+%\documentclass[fractalfract,article,submit,pdftex,moreauthors]{Definitions/mdpi} 
+\documentclass[preprints,article,accept,pdftex,oneauthor]{Definitions/mdpi}
+%\documentclass[preprints,article,submit,pdftex,oneauthor]{Definitions/mdpi}
+% For posting an early version of this manuscript as a preprint, you may use "preprints" as the journal. Changing "submit" to "accept" before posting will remove line numbers.
+%% accept for $\hl$
+
+% Below journals will use APA reference format:
+% admsci, aieduc, behavsci, businesses, econometrics, economies, education, ejihpe, famsci, games, humans, ijcs, ijfs, jintelligence, journalmedia, jrfm, jsam, languages, peacestud, psycholint, publications, tourismhosp, youth
+
+% Below journals will use Chicago reference format:
+% arts, genealogy, histories, humanities, laws, literature, religions, risks, socsci
+
+%--------------------
+% Class Options:
+%--------------------
+
+\usepackage{quantikz}   % quantum circuit diagrams
+\usepackage{braket}     % Dirac bra-ket notation
+
+%\usepackage{xcolor}
+%\usepackage{soul}
+%\usepackage{siunitx}
+
+%\usepackage{lineno}
+%\linenumbers
+
+%\let\hl\relax
+
+%----------
+% journal
+%----------
+% Choose between the following MDPI journals:
+% accountaudit, acoustics, actuators, addictions, adhesives, admsci, adolescents, aerobiology, aerospace, agriculture, agriengineering, agrochemicals, agronomy, ai, aichem, aieduc, aieng, aimater, aimed, aipa, air, aisens, algorithms, allergies, alloys, amh, analog, analytica, analytics, anatomia, anesthres, animals, antibiotics, antibodies, antioxidants, applbiosci, appliedchem, appliedmath, appliedphys, applmech, applmicrobiol, applnano, applsci, aquacj, architecture, arm, arthropoda, arts, asc, asi, astronautics, astronomy, atmosphere, atoms, audiolres, automation, axioms, bacteria, batteries, bdcc, behavsci, beverages, biochem, bioengineering, biologics, biology, biomass, biomechanics, biomed, biomedicines, biomedinformatics, biomimetics, biomolecules, biophysica, bioresourbioprod, biosensors, biosphere, biotech, birds, blockchains, bloods, blsf, brainsci, breath, buildings, businesses, cancers, carbon, cardio, cardiogenetics, cardiovascmed, catalysts, cells, ceramics, challenges, chemengineering, chemistry, chemosensors, chemproc, children, chips, cimb, civileng, cleantechnol, climate, clinbioenerg, clinpract, clockssleep, cmd, cmtr, coasts, coatings, colloids, colorants, commodities, complexities, complications, compounds, computation, computers, condensedmatter, conservation, constrmater, cosmetics, covid, crops, cryo, cryptography, crystals, csmf, ctn, culture, curroncol, cyber, dairy, data, ddc, dentistry, dermato, dermatopathology, designs, devices, dhi, diabetology, diagnostics, dietetics, digital, disabilities, diseases, diversity, dna, drones, dynamics, earth, ebj, ecm, ecologies, econometrics, economies, edm, education, eesp, ejihpe, electricity, electrochem, electronicmat, electronics, encyclopedia, endocrines, energies, eng, engproc, entomology, entropy, environments, environremediat, epidemiologia, epigenomes, esa, est, famsci, fermentation, fibers, fintech, fire, fishes, fluids, foods, forecasting, forensicsci, forests, fossstud, foundations, fractalfract, fuels, future, futureinternet, futurepharmacol, futurephys, futuretransp, galaxies, games, gases, gastroent, gastrointestdisord, gastronomy, gels, genealogy, genes, geographies, geohazards, geomatics, geometry, geosciences, geotechnics, geriatrics, germs, glacies, grasses, green, greenhealth, gucdd, hardware, hazardousmatters, healthcare, hearts, hemato, hematolrep, hep, heritage, higheredu, highthroughput, histories, horticulturae, hospitals, humanities, humans, hydrobiology, hydrogen, hydrology, hydropower, hygiene, idr, iic, ijcs, ijem, ijerph, ijfs, ijgi, ijmd, ijms, ijns, ijom, ijpb, ijt, ijtm, ijtpp, ime, immuno, informatics, information, infrastructures, inorganics, insects, instruments, inventions, iot, j, jaestheticmed, jal, jcdd, jcm, jcp, jcrm, jcs, jcto, jdad, jdb, jdream, jemr, jeta, jfb, jfmk, jgbg, jgg, jimaging, jintelligence, jlpea, jmahp, jmmp, jmms, jmp, jmse, jne, jnt, jof, joi, joitmc, joma, jop, joptm, jor, journalmedia, jox, jpbi, jphytomed, jpm, jrfm, jsam, jsan, jtaer, jvd, jzbg, kidneydial, kinasesphosphatases, knowledge, labmed, laboratories, lae, land, languages, laws, life, lights, limnolrev, lipidology, liquids, literature, livers, logics, logistics, lubricants, lymphatics, machines, macromol, magnetism, magnetochemistry, make, marinedrugs, materials, materproc, mathematics, mca, measurements, medicina, medicines, medsci, membranes, merits, metabolites, metals, meteorology, methane, metrics, metrology, micro, microarrays, microbiolres, microelectronics, micromachines, microorganisms, microplastics, microwave, minerals, mining, mmphys, modelling, molbank, molecules, mps, msf, mti, multimedia, muscles, nanoenergyadv, nanomanufacturing, nanomaterials, ncrna, ndt, network, neuroglia, neuroimaging, neurolint, neurosci, nitrogen, notspecified, nursrep, nutraceuticals, nutrients, obesities, occuphealth, oceans, ohbm, onco, optics, oral, organics, organoids, osteology, oxygen, pandemics, parasites, parasitologia, particles, pathogens, pathophysiology, peacestud, pediatrrep, pets, pharmaceuticals, pharmaceutics, pharmacoepidemiology, pharmacy, philosophies, photochem, photonics, phycology, physchem, physics, physiologia, plants, plasma, platforms, pollutants, polymers, polysaccharides, populations, poultry, powders, precipitation, precisoncol, preprints, proceedings, processes, prosthesis, proteomes, psf, psychiatryint, psychoactives, psycholint, publications, purification, quantumrep, quaternary, qubs, radiation, rdt, reactions, realestate, receptors, recycling, regeneration, religions, remotesensing, reports, reprodmed, resources, rheumato, risks, rjpm, robotics, rsee, ruminants, safety, sci, scipharm, sclerosis, seeds, sensors, separations, sexes, shi, signals, sinusitis, siuj, skins, smartcities, sna, societies, socsci, software, soilsystems, solar, solids, spectroscj, sports, standards, stats, std, stratsediment, stresses, surfaces, surgeries, suschem, sustainability, symmetry, synbio, systems, tae, targets, taxonomy, technologies, telecom, test, textiles, thalassrep, therapeutics, thermo, timespace, tomography, tourismhosp, toxics, toxins, tph, transplantology, transportation, traumacare, traumas, tri, tropicalmed, universe, urbansci, uro, vaccines, vehicles, venereology, vetsci, vibration, virtualworlds, viruses, vision, waste, water, welding, wem, wevj, wild, wind, women, world, youth, zoonoticdis
+
+%---------
+% article
+%---------
+% The default type of manuscript is "article", but can be replaced by: 
+% abstract, addendum, article, benchmark, book, bookreview, briefcommunication, briefreport, casereport, changes, clinicopathologicalchallenge, comment, commentary, communication, conceptpaper, conferenceproceedings, correction, conferencereport, creative, datadescriptor, discussion, entry, expressionofconcern, extendedabstract, editorial, essay, erratum, fieldguide, hypothesis, interestingimages, letter, meetingreport, monograph, newbookreceived, obituary, opinion, proceedingpaper, projectreport, reply, retraction, review, perspective, protocol, shortnote, studyprotocol, supfile, systematicreview, technicalnote, viewpoint, guidelines, registeredreport, tutorial,  giantsinurology, urologyaroundtheworld
+% supfile = supplementary materials
+
+%----------
+% submit
+%----------
+% The class option "submit" will be changed to "accept" by the Editorial Office when the paper is accepted. This will only make changes to the frontpage (e.g., the logo of the journal will get visible), the headings, and the copyright information. Also, line numbering will be removed. Journal info and pagination for accepted papers will also be assigned by the Editorial Office.
+
+%------------------
+% moreauthors
+%------------------
+% If there is only one author the class option oneauthor should be used. Otherwise use the class option moreauthors.
+
+%---------
+% pdftex
+%---------
+% The option pdftex is for use with pdfLaTeX. Remove "pdftex" for (1) compiling with LaTeX & dvi2pdf (if eps figures are used) or for (2) compiling with XeLaTeX.
+
+
+
+
+%=================================================================
+% MDPI internal commands - do not modify
+\firstpage{1} 
+\makeatletter 
+\setcounter{page}{\@firstpage} 
+\makeatother
+\pubvolume{1}
+\issuenum{1}
+\articlenumber{0}
+\pubyear{2026}
+\copyrightyear{2026}
+%\externaleditor{Firstname Lastname} % More than 1 editor, please add `` and '' before the last editor name
+\datereceived{ } 
+\daterevised{ } % Comment out if no revised date
+\dateaccepted{ } 
+\datepublished{ } 
+%\datecorrected{} % For corrected papers: "Corrected: XXX" date in the original paper.
+%\dateretracted{} % For retracted papers: "Retracted: XXX" date in the original paper.
+%\doinum{} % Used for some special journals, like molbank
+%\pdfoutput=1 % Uncommented for upload to arXiv.org
+%\CorrStatement{yes}  % For updates
+%\longauthorlist{yes} % For many authors that exceed the left citation part
+%\IsAssociation{yes} % For association journals
+
+
+
+%=================================================================
+% Add packages and commands here. The following packages are loaded in our class file: fontenc, inputenc, calc, indentfirst, fancyhdr, graphicx, epstopdf, lastpage, ifthen, float, amsmath, amssymb, lineno, setspace, enumitem, mathpazo, booktabs, titlesec, etoolbox, tabto, xcolor, colortbl, soul, multirow, microtype, tikz, totcount, changepage, attrib, upgreek, array, tabularx, pbox, ragged2e, tocloft, marginnote, marginfix, enotez, amsthm, natbib, hyperref, cleveref, scrextend, url, geometry, newfloat, caption, draftwatermark, seqsplit
+% cleveref: load \crefname definitions after \begin{document}
+
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage{graphicx}
+
+
+%=================================================================
+% Please use the following mathematics environments: Theorem, Lemma, Corollary, Proposition, Characterization, Property, Problem, Example, ExamplesandDefinitions, Hypothesis, Remark, Definition, Notation, Assumption
+%% For proofs, please use the proof environment (the amsthm package is loaded by the MDPI class).
+
+%=================================================================
+% Full title of the paper (Capitalized)
+\Title{Quantum Circuit Learning for Volatility Modeling: Multifractal Analysis of Realized Volatility Time Series}
+
+% Author Orchid ID: enter ID or remove command
+\newcommand{\orcidauthorA}{0000-0002-7082-3390} % Add \orcidA{} behind the author's name
+%\newcommand{\orcidauthorB}{0000-0000-0000-000X} % Add \orcidB{} behind the author's name
+
+% Authors, for the paper (add full first names)
+\Author{Tetsuya Takaishi $^{1}$\orcidA{}}
+
+%\longauthorlist{yes}
+
+% MDPI internal command: Authors, for metadata in PDF
+%\AuthorNames{Firstname Lastname, Firstname Lastname and Firstname Lastname}
+
+%\longauthorlist{yes}
+
+% Affiliations / Addresses (Add [1] after \address if there is only one affiliation.)
+\address{%
+$^{1}$ \quad Hiroshima University of Economics, Hiroshima 731-0192, Japan; tt-taka@hue.ac.jp\\
+}
+%$^{2}$ \quad Affiliation 2; e-mail@e-mail.com}
+
+% Contact information of the corresponding author
+\corres{Correspondence: tt-taka@hue.ac.jp}
+%; Tel.: (optional; include country code; if there are multiple corresponding authors, add author initials) +xx-xxxx-xxx-xxxx (F.L.)}
+
+% Current address and/or shared authorship
+%\firstnote{Current address: Affiliation.}  
+% Current address should not be the same as any items in the Affiliation section.
+
+%\secondnote{These authors contributed equally to this work.}
+% The commands \thirdnote{} till \eighthnote{} are available for further notes.
+
+%\simplesumm{} % Simple summary
+
+%\conference{} % An extended version of a conference paper
+
+% Abstract (Do not insert blank lines, i.e. \\) 
+\abstract{
+We propose a quantum circuit learning  framework for modeling the
+realized volatility (RV) of Bitcoin and investigate the statistical
+properties of the predicted time series through multifractal analysis.
+Unlike conventional GARCH-type models, which require a pre-specified
+functional form for the volatility process, a parameterized quantum
+circuit directly approximates the volatility function from empirical
+data, eliminating the need for explicit model selection.
+Using five-minute Bitcoin price data, we construct daily RV, train a
+single-qubit parameterized quantum circuit, and
+generate long synthetic time series from the optimized quantum circuit.
+Multifractal Detrended Fluctuation Analysis is applied to
+calculate the generalized Hurst exponent $h(q)$, the singularity
+spectrum $f(\alpha)$, and the multifractal scaling exponent $\tau(q)$.
+%Three principal findings are reported.
+The predicted return series exhibits $h(2)\approx 0.5$,
+consistent with near-random dynamics, and 
+%and the efficient market hypothesis.
+%Second, 
+both the predicted and the empirical return series display
+multifractality that partially persists after random shuffling.
+%, indicatingthat heavy-tailed distributions contribute the emergence of multifractal behavior.
+%Third,
+The increment series of RV shows pronounced
+anti-persistence with $h(2)\approx 0.05$--$0.1$, consistent with the
+rough volatility hypothesis.
+These results demonstrate that a simple single-qubit parameterized quantum
+%
+circuit captures qualitatively some observed properties in
+%key stylized facts of 
+Bitcoin volatility dynamics.%
+}
+
+% Keywords
+\keyword{
+Bitcoin;
+  generalized Hurst exponent;
+  singularity spectrum;
+  multifractal analysis;
+  parameterized quantum circuit;
+  quantum circuit learning;
+  realized volatility;
+  rough volatility;
+  stylized facts%
+%keyword 1; keyword 2; keyword 3 (List three to ten pertinent keywords specific to the article; yet reasonably common within the subject discipline.)
+} 
+
+% The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
+%\PACS{J0101}
+%\MSC{}
+%\JEL{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Diversity
+%\LSID{\url{http://}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Applied Sciences
+%\featuredapplication{Authors are encouraged to provide a concise description of the specific application or a potential application of the work. This section is not mandatory.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Data
+%\dataset{DOI number or link to the deposited data set if the data set is published separately. If the data set shall be published as a supplement to this paper, this field will be filled by the journal editors. In this case, please submit the data set as a supplement.}
+%\datasetlicense{License under which the data set is made available (CC0, CC-BY, CC-BY-SA, CC-BY-NC, etc.)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal BioTech, Fishes, Neuroimaging and Toxins
+%\keycontribution{The breakthroughs or highlights of the manuscript. Authors can write one or two sentences to describe the most important part of the paper.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Encyclopedia
+%\encyclopediadef{For entry manuscripts only: please provide a brief overview of the entry title instead of an abstract.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Different journals have different requirements. Please check the specific journal guidelines in the "Instructions for Authors" on the journal's official website.
+%\addhighlights{yes}
+%\renewcommand{\addhighlights}{%
+%
+%\noindent The goal is to increase the discoverability and readability of the article via search engines and other scholars. Highlights should not be a copy of the abstract, but a simple text allowing the reader to quickly and simplified find out what the article is about and what can be cited from it. Each of these parts should be devoted up to 2~bullet points.\vspace{3pt}\\
+%\textbf{What are the main findings?}
+% \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
+% \item First bullet.
+% \item Second bullet.
+% \end{itemize}\vspace{3pt}
+%\textbf{What are the implications of the main findings?}
+% \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
+% \item First bullet.
+% \item Second bullet.
+% \end{itemize}
+%}
+
+%\linenumbers 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\section{Introduction}
+Risk management is a central concern for participants in financial markets, where estimating the risk associated with asset holdings and preventing large future losses are essential tasks. Volatility is one of the most widely used measures of financial risk, and forecasting future volatility plays a crucial role in the safe and efficient management of financial assets. A common approach to volatility forecasting is to construct models that capture the dynamics of financial time series. In this context, incorporating empirical properties of financial data is a key requirement for building effective models.
+
+Several stylized facts are known to appear universally across different classes of financial assets~\cite{Cont2001QF}. Among these, volatility clustering is one of the most prominent: periods of high volatility tend to be followed by high volatility, and periods of low volatility by low volatility. To capture this feature, Engle introduced the Autoregressive Conditional Heteroskedasticity (ARCH) model~\cite{Engle1982autoregressive}, in which volatility is modeled as an autoregressive function of past squared returns. Bollerslev later generalized this framework to the Generalized GARCH (GARCH) model~\cite{Bollerslev1986JOE}, which has since become a standard tool in volatility modeling.
+
+
+Another important empirical property of asset returns, especially stock returns, is the leverage effect~\cite{Black1976,Christie1982stochastic}, which refers to the asymmetric response of volatility to positive and negative returns: volatility tends to increase more following negative returns than following positive ones. Since the standard GARCH model cannot capture such asymmetry, several extensions have been proposed, including the Exponential GARCH (EGARCH)~\cite{Nelson1991Econ}, Threshold GARCH (TGARCH)~\cite{Glosten1993JOF}, Quadratic ARCH (QARCH)~\cite{Sentana1995RES}, Rational GARCH (RGARCH)~\cite{takaishi2017rational,takaishi2018volatility}, and Asymmetric Power GARCH (APGARCH)~\cite{ding1993long} models.
+
+
+A further class of models incorporating stochastic dynamics is the
+Stochastic Volatility (SV) ~\cite{taylor1982,taylor1986modelling}, which augments the volatility
+equation with a stochastic disturbance term. Whereas GARCH-type models
+can generally be estimated via maximum likelihood, which is
+computationally straightforward, maximum likelihood estimation of SV
+models is intractable; Bayesian estimation\footnote{It is also possible to estimate the parameters of a GARCH model within a Bayesian framework. For example, see \cite{Takaishi2006/10,Takaishi2009,Takaishi2009Complex,Takaishi2009IEEE,takaishi2010bayesian,takaishi2013markov}} is therefore the predominant
+approach, implemented through Markov Chain Monte Carlo methods developed
+specifically for this purpose~\cite{kim1998stochastic,jacquier2002bayesian, omori2007stochastic,omori2008block}.
+In lattice Quantum Chromo Dynamics (QCD) simulations~\cite{wilson1974confinement,creutz1980monte,gupta1998introduction,ukawa1989lattice,lippert2007hybrid}, physical observables are typically computed using Markov chain Monte Carlo methods, among which the standard algorithm is the Hybrid Monte Carlo (HMC) method~\cite{duane1987hybrid}. Although HMC was originally developed~\footnote{For studies on methods that improve the efficiency of the HMC algorithm in lattice QCD simulations, see, for example, \cite{sexton1992hamiltonian,hasenbusch2001speeding,Takaishi1997Fast, takaishi2000choice,takaishi2002higher,takaishi2006testing}. In realistic lattice QCD simulations, it is necessary to handle an odd number of fermion flavors, and several variants of the HMC algorithm capable of performing such simulations have been proposed, including the following~\cite{takaishi2002odd,clark2006rational,clark2007accelerating}.} within the context of lattice QCD computations, it has since been adopted across a wide range of fields, where it is also referred to as Hamiltonian Monte Carlo. Several studies~\cite{takaishi2008financial, takaishi2009bayesian,takaishi2014RSV,takaishi2015GPU,takaishi2015application} have applied this HMC framework to the Bayesian estimation of SV-type models.
+
+
+Another stylized fact concerns the long-memory property of volatility. Although GARCH-type models imply short-memory dynamics, empirical studies have shown that volatility often exhibits long-range dependence~\cite{ding1993long,andersen2003modeling}. To address this, long-memory models such as the Autoregressive Fractionally Integrated Moving Average (ARFIMA)~\cite{granger1980introduction} and Fractionally Integrated GARCH (FIGARCH)~\cite{baillie1996fractionally,tayefi2012overview} models have been proposed.
+
+More recently, Gatheral et al.~\cite{gatheral2018volatility} reported that the increments of realized volatility (RV) exhibit a Hurst exponent of approximately $H \approx 0.1$, implying anti-persistent behavior. This phenomenon, known as \emph{rough volatility}, has been confirmed across various asset classes~\cite{bennedsen2022decoupling,livieri2018rough,takaishi2020rough,floc2022roughness,brandi2022multiscaling,mouti2024roughvolatilityevidencerange,takaishi2025multifractality}, and rough fractional volatility models have been shown to provide an excellent fit to empirical data~\cite{gatheral2018volatility}.
+The CBOE Volatility Index (VIX), which is computed from option prices on the S\&P 500 index, is a widely used measure of market uncertainty and stock market volatility. Studies on the Hurst exponent of the VIX time series have shown that, similar to RV, its value is less than 0.5, indicating anti-persistence, or the rough volatility property~\cite{bariviera2023disentangling,takaishi2025impact,takaishi2026impact}.
+Under the Mixture of Distributions Hypothesis~\cite{clark1973subordinated,tauchen1983price,andersen1996return}, price fluctuations are driven by the amount of information flowing into the market, and Clark~\cite{clark1973subordinated} employs trading volume as a proxy for information arrival. In this framework, trading volume and volatility are expected to exhibit a strong correlation~\footnote{As an illustration of the strong correlation between trading volume and volatility, it has been pointed out that introducing trading volume into GARCH models leads to a reduction in the GARCH effect~\cite{lamoureux1990heteroskedasticity}. Subsequently, a substantial body of research has incorporated volume variables into GARCH-type models. See, for example, ~\cite{sharma1996heteroscedasticity,brailsford1996empirical,miyakoshi2002arch,carroll2012trading,bessembinder1992futures,ureche2009more,bose2015examining,takaishi2016relationship}.}, implying that the volume time series should share statistical properties similar to those of the volatility time series. Indeed, it has been shown that the Hurst exponent of trading volume time series is also less than 0.5, reflecting the rough volatility property~\cite{takaishi2022Hurst}.
+
+
+Given the wide variety of volatility models, each producing different estimates and forecasts, selecting an appropriate model for a given dataset remains a practical challenge. Model-free measures such as RV~\cite{andersen1998answering,andersen2003modeling,barndorff2002econometric,mcaleer2008realized}, constructed from high-frequency data, provide accurate estimates of daily volatility. However, forecasting still requires a model, leading to the development of hybrid approaches such as Realized GARCH~\cite{hansen2012realized,hansen2016exponential}, Realized SV~\cite{takahashi2009estimating,koopman2013analysis,takaishi2018bias}, Heterogeneous Autoregressive (HAR)~\cite{corsi2009simple}, and Reailzed HAR GARCH~\cite{huang2016modeling} models.
+
+%\hl{In this study, we explore an alternative 
+%model-agnostic 
+%approach to volatility modeling based on \emph{quantum circuit learning} (QCL), introduced by Mitarai et al.}~\cite{mitarai2018quantum}.
+%本研究では、ボラティリティをモデル化する別のアプローチとして、量子コンピュータの研究分野で提案された量子回路学習を利用する。量子コンピュータは量子特有の性質を利用して古典計算よりもスピードアップを図るもので、特に化学計算や材料科学などの量子シミュレーションの分野が応用先として期待されている。
+\hl{In this study, we employ \emph{quantum circuit learning} (QCL) introduced by Mitarai et al.~\mbox{\cite{mitarai2018quantum}}, which has been proposed in the field of quantum computing, as an alternative approach to modeling volatility. Quantum computers aim to achieve computational speedup over classical methods by exploiting quantum-specific properties, and they are particularly expected to find applications in the fields of quantum simulation, such as computational chemistry and materials science ( see e.g. \mbox{\cite{bauer2020quantum}} ).}
+QCL employs parameterized quantum circuits (PQCs) for function approximation and classification tasks. 
+%ここでは、QCLの持つ関数を近似するための表現力を利用してボラティリティ関数を近似することを試みる。従って、本研究では量子コンピュータによって古典計算よりもスピードアップを図ることは目的としていない。
+\hl{Here, we attempt to approximate the volatility function by utilizing the expressive power of QCL for function approximation. Therefore, the objective of this study is not to achieve computational speedup over classical methods using quantum computers.}
+
+%QCLは量子回路をどのようなデザインにするかという自由度があるが、
+\hl{Although QCL offers flexibility in designing quantum circuits, it does not require specifying a functional form for volatility dynamics.}
+Unlike traditional volatility models, the model learns a mapping from past information to future volatility directly through the optimization of quantum circuit parameters. Prior work~\cite{takaishi2025volatility} has applied QCL to synthetic time series generated by GARCH models, demonstrating \hl{that PQCs can reproduce some statistical properties of the underlying data.}
+
+Here, we extend this line of research by applying QCL to real financial data. Using RV constructed from high-frequency Bitcoin price data, we train a single-qubit PQC to approximate the volatility time series. We then analyze the statistical properties of the time series generated by the trained quantum circuit, with a particular focus on multifractal characteristics. Specifically, we employ multifractal detrended fluctuation analysis (MFDFA)~\cite{kantelhardt2002multifractal} to estimate generalized Hurst exponents and investigate whether the QCL-generated time series reproduces empirical features such as anti-persistence and multifractality observed in realized volatility increments. Our results provide new insights into the expressive power of quantum circuits \hl{in modeling financial time series}.
+
+The remainder of this paper is organized as follows. Section 2 reviews GARCH-type volatility models and discusses their interpretation as functional approximations to volatility dynamics. Section 3 introduces the QCL framework and describes the single-qubit parameterized quantum circuit employed to approximate the volatility function. Section 4 outlines the MFDFA methodology used to characterize the statistical properties of both empirical and model-generated time series. Section 5 describes the data construction, including the computation of RV from high-frequency Bitcoin prices, and describes the parameter optimization procedure. Section 6 presents the empirical results, focusing on the Hurst exponent, anti-persistence, and multifractal properties of the predicted return and volatility increment series. Finally, Section 7 concludes with a discussion of the main findings, their implications, and directions for future research.
+
+% -------------------------------------------------------
+\section{GARCH Models}
+% -------------------------------------------------------
+ 
+The GARCH model expresses the conditional volatility as a function of
+past returns and past volatilities, which can be interpreted as a
+truncated Taylor expansion of a general volatility function. Let
+$\sigma_t^2$ denote the conditional volatility at time $t$ and $r_t$ the
+corresponding return. Suppose the next-period volatility $\sigma_{t+1}^2$
+is determined by some function $f$ as
+\begin{equation}
+  \sigma_{t+1}^2 = f\!\left(\sigma_t^2,\, r_t\right), \label{eq:vol_general}
+\end{equation}
+and that the return is generated by
+\begin{equation}
+  r_t = \sigma_t \epsilon_t,
+\end{equation}
+where $\epsilon_t \sim \mathcal{N}(0,1)$ is an i.i.d.\ standard normal
+random variable.
+ 
+Because the true functional form of $f(\sigma_t^2, r_t)$ is unknown,
+for practical purpose it must be approximated by some model. Expanding $f(\sigma_t^2, r_t)$
+in a Taylor series around $\sigma_t^2 = 0$ and $r_t = 0$ gives
+\begin{equation}
+  f\!\left(\sigma_t^2, r_t\right)
+  = f_{00}
+  + f_{10}\,\sigma_t^2
+  + f_{01}\,r_t
+  + f_{11}\,\sigma_t^2 r_t
+  + \tfrac{1}{2}f_{20}\!\left(\sigma_t^2\right)^2
+  + \tfrac{1}{2}f_{02}\!\left(r_t\right)^2
+  + \cdots, \label{eq:taylor}
+\end{equation}
+where the expansion coefficients are defined as
+\begin{equation}
+  f_{ij}
+  = \left(\frac{\partial}{\partial\sigma_t^2}\right)^{\!i}
+    \left(\frac{\partial}{\partial r_t}\right)^{\!j}
+    f\!\left(\sigma_t^2, r_t\right)\bigg|_{\sigma_t^2,\,r_t=0}.
+  \label{eq:taylor_coeff}
+\end{equation}
+If volatility is assumed to be symmetric with respect to the sign of
+$r_t$, the coefficients $f_{01}$ and $f_{11}$ vanish. Retaining only
+the lowest-order terms in $\sigma_t^2$ and $r_t$ yields
+\begin{equation}
+  f\!\left(\sigma_t^2, r_t\right)
+  = f_{00} + f_{10}\,\sigma_t^2 + \tfrac{1}{2}f_{02}\!\left(r_t\right)^2,
+  \label{eq:garch11_derivation}
+\end{equation}
+which corresponds to the well-known GARCH(1,1) model:
+\begin{equation}
+  \sigma_{t+1}^2 = \omega + \beta\,\sigma_t^2 + \alpha\,r_t^2.
+  \label{eq:garch11}
+\end{equation}
+Here, $\alpha$, $\beta$, and $\omega$ correspond to Taylor expansion
+coefficients; since their true values are unknown, they are estimated by
+fitting the model to historical time series data---equivalently, one is
+estimating the expansion coefficients from the data.
+ 
+Volatility asymmetry with respect to the sign of $r_t$ is well
+documented in equity price time series. Retaining the term proportional
+to $r_t$ to account for this asymmetry gives
+\begin{equation}
+  f\!\left(\sigma_t^2, r_t\right)
+  = f_{00} + f_{10}\,\sigma_t^2 + f_{01}\,r_t
+    + \tfrac{1}{2}f_{02}\!\left(r_t\right)^2,
+  \label{eq:qarch}
+\end{equation}
+which is the functional form of the QARCH
+model~\cite{Sentana1995RES}. Increasing the order of the Taylor expansion
+improves the approximation but also increases the number of free
+parameters, making estimation increasingly difficult without necessarily
+yielding commensurate gains in accuracy. An alternative is to
+approximate $f$ by a class of functions other than polynomials.
+Pad\'{e} approximants\footnote{In the finance literature, research applying Padé approximations to the approximation of probability distributions can be found in, for example, \cite{Nuyts2001Physica,alderweireld2004detailed, chen2013empirical}.}, for example, use rational functions and are known
+to outperform Taylor series in many settings. A GARCH variant exploiting
+this idea is the RGARCH model~\cite{takaishi2017rational}:
+\begin{equation}
+  f\!\left(\sigma_t^2, r_t\right)
+  = \frac{\omega + \alpha\,r_t^2 + \beta\,\sigma_t^2}{1 + \gamma\,r_t},
+  \label{eq:rgarch}
+\end{equation}
+and its stabilized version~\cite{takaishi2018volatility}:
+\begin{equation}
+  f\!\left(\sigma_t^2, r_t\right)
+  = \frac{\omega + \alpha\,r_t^2 + \beta\,\sigma_t^2}{\exp(\gamma\,r_t)},
+  \label{eq:rgarch}
+\end{equation}
+where $\gamma$ captures volatility asymmetry. Setting $\gamma = 0$
+reduces these to the GARCH(1,1) model in Eq.~\eqref{eq:garch11}.
+
+
+Other functional forms have also been proposed~\cite{bera1993arch}. The Exponential GARCH
+(EGARCH) model~\cite{Nelson1991Econ} operates on the logarithm of the variance,
+while the APARCH model~\cite{ding1993long} treats
+the power exponent of volatility as a free parameter. The diversity of
+available models reflects the fact that each produces different
+volatility estimates, and no single model dominates across all data sets
+and asset classes.
+ 
+% -------------------------------------------------------
+%\section{Quantum Circuit Learning}
+% -------------------------------------------------------
+ 
+%In this study, we approximate the volatility function using a quantum circuit through quantum circuit learning~\cite{mitarai2018quantum}. 
+%The volatility function takes past information as input and predicts next-period volatility. Following the GARCH framework, we use one‑period‑lagged volatility and %returns as inputs to forecast the subsequent period’s volatility. Let the volatility function be
+%$v_t^2 = v(\boldsymbol{x_{t-1}}, \boldsymbol{\theta})$, where
+%$\boldsymbol{x_{t-1}} = (v_{t-1}^2, r_{t-1})$ denotes the input data.
+ 
+%%In the QCL framework, we aim to learn a volatility function
+%$v_t^2 = v(\boldsymbol{x}_{t-1}, \boldsymbol{\theta})$ that approximates the
+%target volatility data (i.e., empirical data) $\sigma_i^2$ by tuning the
+%parameter vector $\boldsymbol{\theta}$. The input data is defined as
+%$\boldsymbol{x}_i = (r_i, \sigma_i^2)$, where $r_i$ denotes the return
+%and $\sigma_i^2$ the corresponding volatility.
+ 
+%Figure~\ref{fig:volatility_circuit} illustrates the single-qubit
+%parameterized quantum circuit (PQC) employed in this study.
+ 
+%\begin{figure}[h]
+%\centering
+%\begin{quantikz}[thin lines]
+%  \lstick{$\ket{0}$} & \gate{R_Y^r} & \gate{R_Z^r} &
+%%  \gate{R_Y^v} & \gate{R_Z^v} & \gate{U(\boldsymbol{\theta})} &
+%  \qw & \meter{}
+%%\end{quantikz}
+%\caption{Single-qubit quantum circuit used for volatility modeling.}
+%\label{fig:volatility_circuit}
+%\end{figure}
+ 
+%The unitary gate $U(\boldsymbol{\theta})$ is a two-dimensional operator
+%defined as
+%\[
+%  U(\boldsymbol{\theta}) =
+%  \begin{pmatrix}
+%    \cos(\theta/2) & -e^{i\lambda}\sin(\theta/2) \\[4pt]
+%    e^{i\phi}\sin(\theta/2) & e^{i(\lambda+\phi)}\cos(\theta/2)
+%  \end{pmatrix},
+%\]
+%where $\boldsymbol{\theta} = (\theta, \lambda, \phi)$ represents the
+%trainable parameters.
+ 
+%Angle encoding is applied to embed the input data into quantum states
+%using rotational gates ($R_Y$ and $R_Z$), following the method used by Mitarai et
+%%al.~\cite{mitarai2018quantum}:
+%\begin{align}
+%  R_Y^r &= R_Y\!\left(\arcsin(r_i)\right), \\
+%  R_Z^r &= R_Z\!\left(\arccos(r_i^2)\right), \\
+%  R_Y^v &= R_Y\!\left(\arcsin(2\sigma_i^2 - 1)\right), \\
+%  R_Z^v &= R_Z\!\left(\arccos(\sigma_i^4)\right).
+%\end{align}
+ 
+%The output is obtained via a $Z$-basis measurement, and the probability
+%$P_0$ of measuring the $\ket{0}$ state is used to represent the
+%predicted volatility at time $i+1$, i.e., $v_{i+1}^2 = P_0$. In the actual simulation, we utilize
+%Qiskit\footnote{IBM Qiskit: \url{https://www.ibm.com/quantum/qiskit}}
+%to compute the probability $P_0$ directly from the state vector.
+ 
+%The optimal parameter set $\boldsymbol{\theta}$ is determined by
+%minimizing \hl{the following loss function:}
+%\begin{equation}
+ % \mathcal{L} = \frac1N\sum_{i=1}^{N} \left(v_i^2 - \sigma_i^2\right)^2,
+%\end{equation}
+%where $N$ is the number of data points.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% -------------------------------------------------------
+\section{Quantum Circuit Learning}
+% -------------------------------------------------------
+%Rewrite
+
+\hl{To model the volatility dynamics, this study employs the Quantum Circuit
+Learning (QCL) approach proposed by Mitarai et al.~\mbox{\cite{mitarai2018quantum}}.
+Within this framework, a parameterized quantum circuit is trained to
+approximate the underlying volatility-generation process.
+
+The objective is to construct a function that maps historical market
+information to future volatility. Consistent with conventional GARCH-type
+specifications, the explanatory variables consist of the lagged volatility
+and lagged return. The volatility model is therefore represented as}
+\begin{equation}
+v_t^2 = v(\boldsymbol{x}_{t-1},\boldsymbol{\theta}),
+\end{equation}
+\hl{where}
+$\boldsymbol{x}_{t-1}=(v_{t-1}^2,r_{t-1})$
+\hl{denotes the input vector and
+$\boldsymbol{\theta}$ represents the trainable circuit parameters.}
+
+\hl{The learning task consists of adjusting
+$\boldsymbol{\theta}$ so that the model output reproduces the observed
+volatility sequence. Let
+$\sigma_i^2$
+be the target volatility value and define the input data as}
+\begin{equation}
+\boldsymbol{x}_i=(r_i,\sigma_i^2),
+\end{equation}
+\hl{where $r_i$ and $\sigma_i^2$ correspond to the return and volatility at
+time $i$, respectively.}
+
+\hl{Figure~\mbox{\ref{fig:volatility_circuit}} presents the parameterized
+single-qubit quantum circuit adopted in this study.}
+%このモデルは、３つのパラメータをもつ簡単なモデルであり、このモデルを採用したのは既存のモデルとの比較からである。Eq.(??)で表されるGARCH(1,1)モデルは3つのパラメータを持つシンプルなモデルであるが、ボラティリティクラスタリングなどの重要な金融時系列の性質を捉えることができ、金融の実証分析でよく利用されている。金融時系列については多数のパラメータを導入せずとも金融時系列の性質を捉えることができる可能性がある。本研究ではFig.1で表されるモデルを研究の初めのモデルとして利用する。もちろん、３つのパラメータのモデルは表現力に制限があり、金融時系列の種類によってはもっと表現力の高いモデルを利用する必要があるかもしれない。
+\hl{This model is a parsimonious specification with three parameters, and it is adopted based on comparisons with existing models. The GARCH(1,1) model, expressed in Eq.~\mbox{\eqref{eq:garch11}}, is a simple three-parameter model; however, it is capable of capturing key characteristics of financial time series, such as volatility clustering, and is therefore widely used in empirical financial analysis. This suggests that it may be possible to describe essential features of financial time series without introducing a large number of parameters. In this study, the model illustrated in Figure~1 is employed as the baseline specification.
+It should be noted, however, that a three-parameter model has inherent limitations in terms of expressibility. Depending on the type of financial time series under consideration, more expressive models may be required to adequately capture the underlying dynamics.}
+
+\begin{figure}[h]
+\centering
+\begin{quantikz}[thin lines]
+\lstick{$\ket{0}$}
+& \gate{R_Y^r}
+& \gate{R_Z^r}
+& \gate{R_Y^v}
+& \gate{R_Z^v}
+& \gate{U(\boldsymbol{\theta})}
+& \qw
+& \meter{}
+\end{quantikz}
+\caption{Single-qubit quantum circuit used for volatility modeling.}
+\label{fig:volatility_circuit}
+\end{figure}
+
+\hl{The trainable operation
+$U(\boldsymbol{\theta})$
+is expressed by the following two-dimensional unitary matrix:}
+
+\begin{equation}
+U(\boldsymbol{\theta})
+=
+\begin{pmatrix}
+\cos(\theta/2)
+&
+-e^{i\lambda}\sin(\theta/2)
+\\[4pt]
+e^{i\phi}\sin(\theta/2)
+&
+e^{i(\lambda+\phi)}\cos(\theta/2)
+\end{pmatrix},
+\end{equation}
+\hl{where
+$\boldsymbol{\theta}=(\theta,\lambda,\phi)$
+contains the variational parameters to be optimized during training.
+
+The classical input variables are encoded into the quantum state through
+angle encoding using rotational gates $R_Y$ and $R_Z$. Following the
+encoding scheme introduced in Ref.~\mbox{\cite{mitarai2018quantum}}, the gate
+angles are defined as}
+
+\begin{align}
+R_Y^r
+&=
+R_Y\!\left(\arcsin(r_i)\right),
+\\
+R_Z^r
+&=
+R_Z\!\left(\arccos(r_i^2)\right),
+\\
+R_Y^v
+&=
+R_Y\!\left(\arcsin(2\sigma_i^2-1)\right),
+\\
+R_Z^v
+&=
+R_Z\!\left(\arccos(\sigma_i^4)\right).
+\end{align}
+
+\hl{After application of the circuit, a measurement is performed in the
+computational ($Z$) basis. The probability of observing the state
+$\ket{0}$, denoted by $P_0$, is interpreted as the forecasted volatility
+for the next period:}
+
+\begin{equation}
+v_{i+1}^2=P_0.
+\end{equation}
+
+\hl{For numerical implementation, the probability $P_0$ is evaluated directly
+from the quantum state vector using
+Qiskit\footnote{IBM Qiskit: \url{https://www.ibm.com/quantum/qiskit}}.
+Model training is carried out by optimizing the parameter vector
+$\boldsymbol{\theta}$ so as to minimize the discrepancy between the
+predicted and observed volatilities. The loss function is defined as}
+
+\begin{equation}
+\mathcal{L}
+= \frac1N
+\sum_{i=1}^{N}
+\left(
+v_i^2-\sigma_i^2
+\right)^2,
+\end{equation}
+\hl{where $N$ denotes the total number of observations used for estimation.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% -------------------------------------------------------
+%\section{Multifractal Analysis}
+% -------------------------------------------------------
+ 
+%In this study, we compute the generalized Hurst exponent of the time
+%series and investigate its multifractal properties. The MFDFA method, developed by Kantelhardt
+%et al.~\cite{kantelhardt2002multifractal} and often used to analyze  multifractal properties of various financial time series ( see, e.g. ~\cite{Jiang-Xie-Zhou-Sornette-2019-RPP})
+%, is employed for this purpose. The
+%MFDFA procedure consists of the following steps.
+
+
+%\medskip
+%%\noindent\textbf{(i) Profile construction.}
+%Let the target time series be $\{x_t,\, t = 1, \ldots, N\}$. The
+%profile $y(k)$ is constructed as
+%\begin{equation}
+%  y(k) = \sum_{t=1}^{k}\bigl[x_t - \langle x \rangle\bigr],
+ % \qquad k = 1, \ldots, N, \label{eq:profile}
+%\end{equation}
+%where $\langle x \rangle$ denotes the mean of the series $\{x_t\}$.
+ 
+%\medskip
+%\noindent\textbf{(ii) Local variance computation.}
+%The profile $y(k)$ is divided into $N_s = \lfloor N/s \rfloor$ non-overlapping
+%segments of length $s$. Within each segment, a local trend is estimated
+%and removed, and the residual variance $F^2(s,\nu)$ for the
+%$\nu$-th segment ($\nu = 1, \ldots, N_s$) is computed as
+%\begin{equation}
+ % F^2(s,\nu)
+%  = \frac{1}{s}\sum_{i=1}^{s}\bigl[y\bigl((\nu-1)s + i\bigr) - p_\nu(i)\bigr]^2,
+%  \label{eq:local_variance}
+%\end{equation}
+%where $p_\nu(i)$ is a polynomial fitted to the segment to remove the
+%local trend. In this study, a cubic polynomial is used:
+%\begin{equation}
+%  p_\nu(i) = a + b\,i^2 + c\,i^3,
+%\end{equation}
+%with coefficients $a$, $b$, $c$ determined by least-squares fitting.
+%Because $N$ is not necessarily an integer multiple of $s$, the
+%procedure is repeated starting from the end of the series to utilize
+%the remaining data. Specifically, for
+%$\nu = N_s + 1, \ldots, 2N_s$, the variance is computed as
+%\begin{equation}
+ % F^2(s,\nu)
+ % = \frac{1}{s}\sum_{i=1}^{s}\bigl[y\bigl(N - (\nu - N_s - 1)s - i + 1\bigr) - p_\nu(i)\bigr]^2.
+ % \label{eq:local_variance_end}
+%\end{equation}
+ 
+%\medskip
+%\noindent\textbf{(iii) Fluctuation function.}
+%From the set of local variances $\{F^2(s,\nu)\}$, the $q$-th order
+%fluctuation function is defined as
+%\begin{equation}
+%  F_q(s)
+%  = \left\{\frac{1}{2N_s}
+%    \sum_{\nu=1}^{2N_s}\bigl[F^2(s,\nu)\bigr]^{q/2}\right\}^{1/q}.
+%  \label{eq:fluctuation}
+%\end{equation}
+%If the series exhibits long-range power-law correlations, the
+%fluctuation function is expected to scale as
+%\begin{equation}
+%  F_q(s) \sim s^{h(q)}, \label{eq:scaling}
+%\end{equation}
+%where $h(q)$ is the generalized Hurst exponent, obtained by fitting the
+%log-transformed version of Eq.~\eqref{eq:scaling}. For $q = 2$, the
+%procedure reduces to standard Detrended Fluctuation Analysis
+%(DFA)~\cite{peng1994mosaic}, and $h(2)$ coincides with the classical Hurst
+%exponent~\cite{hurst1951long}.
+ 
+%For $q = 0$, Eq.~\eqref{eq:fluctuation} is not directly applicable; in
+%that case, $F_0(s)$ is computed as
+%\begin{equation}
+%  F_0(s)
+%  = \exp\!\left\{\frac{1}{4N_s}
+%    \sum_{\nu=1}^{2N_s}\ln\bigl[F^2(s,\nu)\bigr]\right\}.
+%  \label{eq:fluctuation_q0}
+%\end{equation}
+ 
+%\medskip
+%\noindent\textbf{(iv) Generalized Hurst exponent.}
+%The generalized Hurst exponent $h(q)$ is extracted from the scaling
+%behavior in Eq.~\eqref{eq:scaling}. In
+%this study, $h(q)$ is computed for $q \in [-5, 5]$.
+ 
+%If $h(q)$ is constant with respect to $q$, the series is called
+%\emph{monofractal}; if $h(q)$ varies with $q$, the series is
+%\emph{multifractal}. A Gaussian random series is monofractal with
+%$h(q) = 1/2$, so the existence of multifractality indicates a departure
+%from Gaussian randomness, and the strength of multifractality is
+%sometimes interpreted as a measure of market inefficiency.
+ 
+%Additional multifractal characteristics can be derived from $h(q)$~\cite{kantelhardt2002multifractal}.
+%The multifractal scaling exponent $\tau(q)$ is defined as
+%\begin{equation}
+%  \tau(q) = q\,h(q) - 1. \label{eq:tau}
+%\end{equation}
+%For a monofractal series, $\tau(q)$ is linear in $q$. The singularity
+%spectrum $f(\alpha)$ is related to $\tau(q)$ via the Legendre transform:
+%\begin{align}
+%  \alpha(q) &= \frac{d\tau(q)}{dq}, \label{eq:alpha} \\
+%  f\!\left(\alpha(q)\right) &= q\,\alpha(q) - \tau(q). \label{eq:falpha}
+%\end{align}
+%Substituting Eq.~\eqref{eq:tau} into Eqs.~\eqref{eq:alpha} and
+%\eqref{eq:falpha}, these relations can be expressed in terms of $h(q)$
+%as
+%\begin{align}
+%  \alpha(q) &= h(q) + q\, \frac{dh(q)}{dq}, \label{eq:alpha_h} \\
+%  f\!\left(\alpha(q)\right) &= q\bigl[\alpha(q) - h(q)\bigr] + 1. \label{eq:falpha_h}
+%\end{align}
+ 
+%A commonly used scalar measure of multifractal strength is
+%\begin{equation}
+%  \Delta h(q) = h(-q) - h(q), \label{eq:deltah}
+%\end{equation}
+%which equals zero for a monofractal series~\cite{zunino2008multifractal,wang2009analysis,takaishi2025impact}.
+%Because the width of $f(\alpha)$ also quantifies multifractality---a
+%monofractal series yields a single-point spectrum in $\alpha$---a
+%complementary measure is defined as
+%\begin{equation}
+%  \Delta\alpha(q) = \alpha(-q) - \alpha(q), \label{eq:deltaalpha}
+%\end{equation}
+%which likewise equals zero for a monofractal series.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% -------------------------------------------------------
+\section{Multifractal Analysis}
+% -------------------------------------------------------
+%rewrite
+\hl{To examine the multifractal characteristics of the analyzed time series,
+the generalized Hurst exponent is estimated using the Multifractal
+Detrended Fluctuation Analysis (MFDFA) framework. MFDFA, originally
+proposed by Kantelhardt et al.~\mbox{\cite{kantelhardt2002multifractal}}, has
+become a standard approach for detecting multifractal behavior in a wide
+range of financial datasets (see, for example, \mbox{\cite{Jiang-Xie-Zhou-Sornette-2019-RPP}}). 
+The main computational procedure is summarized below.
+
+\medskip
+\noindent\textbf{(i) Construction of the profile.}
+
+Consider a time series
+$\{x_t,\, t=1,\ldots,N\}$. The cumulative profile is obtained by
+integrating the demeaned observations:}
+
+\begin{equation}
+y(k)=\sum_{t=1}^{k}\left[x_t-\langle x\rangle\right],
+\qquad k=1,\ldots,N,
+\label{eq:profile}
+\end{equation}
+\hl{where $\langle x\rangle$ denotes the sample mean of the series.
+
+\medskip
+\noindent\textbf{(ii) Estimation of local fluctuations.}
+
+The profile $y(k)$ is partitioned into
+$N_s=\lfloor N/s \rfloor$ consecutive non-overlapping segments, each of
+length $s$. For every segment, a polynomial trend is fitted and removed,
+after which the variance of the detrended profile is evaluated. For the
+$\nu$-th segment ($\nu=1,\ldots,N_s$), the variance is given by}
+
+\begin{equation}
+F^2(s,\nu)
+=
+\frac{1}{s}
+\sum_{i=1}^{s}
+\left[
+y\bigl((\nu-1)s+i\bigr)-p_\nu(i)
+\right]^2,
+\label{eq:local_variance}
+\end{equation}
+\hl{where $p_\nu(i)$ denotes the fitted polynomial representing the local
+trend. In the present analysis, a cubic polynomial is adopted,}
+
+\begin{equation}
+p_\nu(i)=a+b\,i^2+c\,i^3,
+\end{equation}
+\hl{with the coefficients estimated through least-squares regression.
+
+Since the series length $N$ is generally not an exact multiple of $s$,
+part of the data may remain unused. To incorporate these observations,
+the same segmentation procedure is repeated from the opposite end of the
+series. For
+$\nu=N_s+1,\ldots,2N_s$, the detrended variance becomes}
+
+\begin{equation}
+F^2(s,\nu)
+=
+\frac{1}{s}
+\sum_{i=1}^{s}
+\left[
+y\bigl(N-(\nu-N_s-1)s-i+1\bigr)-p_\nu(i)
+\right]^2.
+\label{eq:local_variance_end}
+\end{equation}
+
+\hl{
+\medskip
+\noindent\textbf{(iii) Calculation of the fluctuation function.}
+
+Using the collection of variances
+$\{F^2(s,\nu)\}$, the fluctuation function of order $q$ is defined as}
+
+\begin{equation}
+F_q(s)
+=
+\left\{
+\frac{1}{2N_s}
+\sum_{\nu=1}^{2N_s}
+\left[F^2(s,\nu)\right]^{q/2}
+\right\}^{1/q}.
+\label{eq:fluctuation}
+\end{equation}
+
+\hl{For a process characterized by long-range scale-invariant
+correlations, the fluctuation function follows the power-law relation}
+
+\begin{equation}
+F_q(s)\propto s^{h(q)},
+\label{eq:scaling}
+\end{equation}
+\hl{where $h(q)$ denotes the generalized Hurst exponent. Its value is
+estimated from the slope of the linear relationship in the logarithmic
+representation of Eq.~\mbox{\eqref{eq:scaling}}. When $q=2$, MFDFA reduces to
+the conventional Detrended Fluctuation Analysis
+(DFA)~\mbox{\cite{peng1994mosaic}}, and the exponent $h(2)$ corresponds to the
+standard Hurst exponent~\mbox{\cite{hurst1951long}}.
+
+The expression in Eq.~\mbox{\eqref{eq:fluctuation}} is not valid for $q=0$.
+Therefore, the fluctuation function for this case is evaluated as}
+
+\begin{equation}
+F_0(s)
+=
+\exp\left\{
+\frac{1}{4N_s}
+\sum_{\nu=1}^{2N_s}
+\ln\left[F^2(s,\nu)\right]
+\right\}.
+\label{eq:fluctuation_q0}
+\end{equation}
+
+\hl{\medskip
+\noindent\textbf{(iv) Estimation of the generalized Hurst exponent.}
+
+The generalized Hurst exponent $h(q)$ is obtained from the scaling
+behavior described in Eq.~\mbox{\eqref{eq:scaling}}. Throughout this study,
+the calculation is carried out over the interval
+$q\in[-5,5]$.}
+%|q|が大きいとき fluctuation functionにおけるmomentsの計算が不安定になる可能性が指摘されている。Zhouらは日次データのようなlow-frequencyの金融データおいては|q|<=6を利用するよう提案している。ここでは、zhouらの提案も取り入れ、$q\in[-5,5]$の区間において計算を行う。
+\hl{Large values of $|q|$ may lead to numerical instability in the estimation of moments used in the fluctuation function. Jiang et al.~\mbox{\cite{Jiang-Xie-Zhou-Sornette-2019-RPP}} pointed out that, for low-frequency financial data such as daily observations, it is preferable to restrict the analysis to $|q| \leq 6$. Following their recommendation, the present study computes the multifractal measures over the range
+$q = [-5,5]$.}
+
+
+
+\hl{A time series is classified as \emph{monofractal} when $h(q)$ remains
+independent of $q$, whereas variation of $h(q)$ across different values
+of $q$ indicates \emph{multifractality}. For an ideal Gaussian random
+process, $h(q)=1/2$ for all $q$. Consequently, deviations from this
+behavior provide evidence of multifractal structure and have often been
+associated with departures from market efficiency.
+
+Several additional quantities can be derived from the generalized Hurst
+exponent}~\cite{kantelhardt2002multifractal}. \hl{One of them is the
+multifractal scaling exponent,}
+
+\begin{equation}
+\tau(q)=q\,h(q)-1,
+\label{eq:tau}
+\end{equation}
+\hl{which becomes a linear function of $q$ in the monofractal case. The
+singularity spectrum $f(\alpha)$ is obtained through a Legendre
+transformation of $\tau(q)$:}
+
+\begin{align}
+\alpha(q)
+&=
+\frac{d\tau(q)}{dq},
+\label{eq:alpha}
+\\
+f\!\left(\alpha(q)\right)
+&=
+q\,\alpha(q)-\tau(q).
+\label{eq:falpha}
+\end{align}
+
+\hl{Substituting Eq.}~\eqref{eq:tau} \hl{into the above expressions yields}
+
+\begin{align}
+\alpha(q)
+&=
+h(q)+q\frac{dh(q)}{dq},
+\label{eq:alpha_h}
+\\
+f\!\left(\alpha(q)\right)
+&=
+q\bigl[\alpha(q)-h(q)\bigr]+1.
+\label{eq:falpha_h}
+\end{align}
+
+%To quantify the degree of multifractality, the following measure is
+%frequently employed:
+
+%\begin{equation}
+%\Delta h(q)=h(-q)-h(q),
+%\label{eq:deltah}
+%\end{equation}
+
+%which vanishes for a monofractal process
+%\cite{zunino2008multifractal,wang2009analysis,takaishi2025impact}.
+%Another commonly used indicator is based on the width of the singularity
+%spectrum. Since a monofractal series collapses to a single singularity
+%strength, the quantity
+
+%\begin{equation}
+%\Delta\alpha(q)=\alpha(-q)-\alpha(q),
+%\label{eq:deltaalpha}
+%\end{equation}
+
+%provides an alternative measure of multifractal intensity and is also
+%equal to zero in the monofractal limit.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+% -------------------------------------------------------
+\section{Data and Parameter Optimization}
+% -------------------------------------------------------
+ 
+In this study, daily realized volatility $\mathrm{RV}_t$ is
+constructed from Bitcoin prices traded on the Bitstamp exchange, using
+price data sampled at five-minute intervals. While higher sampling
+frequencies improve the precision of RV estimates, they
+also amplify the influence of microstructure noise~\cite{zhou1996high,bandi2006separating,bandi2008microstructure,hansen2006realized}. The five-minute
+sampling interval is therefore adopted as a standard compromise between
+estimation accuracy and noise contamination, consistent with the
+recommendation in the existing literature~\cite{liu2015does}. \hl{The five-minute log-return is
+defined as}
+%%%%CC
+\begin{equation}
+  r_{t,i} = \ln P_{t,i+1} - \ln P_{t,i}, \label{eq:return}
+\end{equation}
+where $P_{t,i}$ denotes the five-minute price on day $t$ for $i=1,...,1440/5$. The daily realized volatility $\mathrm{RV}_t$ on day $t$
+is then given by
+\begin{equation}
+  \mathrm{RV}_t = \sum_{i=1}^{n} r_{t,i}^2,
+  \label{eq:RV}
+\end{equation}
+where $n$ is the number of intraday observations; for five-minute
+sampling, $n = 1440/5 = 288$.
+ 
+The data cover the period from September 27, 2020 to February 28, 2023\hl{(UTC)}
+(approximately two and half years) obtained from Bitstamp exchange\footnote{Bitstamp exchage: \url{https://www.bitstamp.net/}}. 
+
+\hl{We construct 5-minute price time series from the obtained high-frequency data and compute the realized volatility according to Eq. (\mbox{\ref{eq:RV}}). If no transaction data are available within a 5-minute interval, we use the price from the previous interval.}
+Figure~2 plots (a) the daily return series
+$R_t$, computed from daily prices $P_t$ via Eq.~\eqref{eq:return}, and
+(b) the daily realized volatility $\mathrm{RV}_t$.
+
+%得られたデータから5分ごとの価格時系列を構築し、eq.(\ref{eq:RV})に従って実現ボラティリティを計算する。もし、5分の時間間隔内に取引データがなければ、その前の区間の価格を利用する。
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=10.0 cm]{n913-Rt-RV-org.eps}
+\caption{(a) Return time series $R_t$. (b) Realized volatility time series $RV_t$.\label{fig2}}
+\end{figure}   
+%\unskip
+
+%%%%%%%%%%%%%%%
+\hl{In this study, the model parameters are estimated using the entire realized volatility dataset to investigate its statistical and generative properties. Accordingly, we do not explicitly divide the data into training, validation, and testing subsets. The primary objective of this work is not to evaluate predictive performance, but rather to examine the model's ability to reproduce the empirical characteristics of realized volatility.}
+%and to generate long synthetic time series.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+The return series $R_t$ and the RV series
+$\mathrm{RV}_t$ are used as inputs to the quantum circuit. Because
+input values are encoded as rotation angles, both series are
+pre-scaled: $R_t$ is mapped to $[-1/c,\, 1/c]$ and $\mathrm{RV}_t$ to
+$[0,\, 1/c]$, with $c = 1.2$. The parameters of $U(\boldsymbol{\theta})$
+are optimized by minimizing the loss function
+\begin{equation}
+  \mathcal{L}
+  = \frac{1}{T}\sum_{t=1}^{T}
+    \Bigl(\mathrm{RV}_t - \overline{\mathrm{RV}}_t\Bigr)^2,
+  \label{eq:cost}
+\end{equation}
+where $\overline{\mathrm{RV}}_t$ is the quantum circuit output at time
+$t$ and $T$ is the total number of observations. Parameter optimization
+is performed using the COBYLA algorithm.
+
+%パラメータの初期値はランダムな値を設定した。いくつかのランダムな値でCOBYLA法を実行し、多くの場合収束性は良いが、ランダム値によっては収束性が悪い場合が確認された。図？は収束した場合のLoss funcitonとiterationの関係を図示したものである。
+\hl{We initialized the parameters with random values and executed the COBYLA algorithm using several different random initializations; while the algorithm generally exhibited good convergence, we observed poor convergence in certain cases depending on the initial values. Figure~\mbox{\ref{fig:loss_convergence}} illustrates the relationship between the loss function and the number of iterations for a converged case.}
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=10.0 cm]{n913-lossfunc.eps}
+\caption{\hl{Loss function by the COBYLA algorithm as a function of iteration.} }
+\label{fig:loss_convergence}
+\end{figure}   
+%\unskip
+
+ 
+Figure~4 compares the input series $\mathrm{RV}_t$ with the circuit
+output $\overline{\mathrm{RV}}_t$ after optimization. The circuit output
+reproduces the broad temporal variation of the input $\mathrm{RV}_t$.
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=10.0 cm]{n913-RVpred2-vs-org2.eps}
+\caption{(Black line) Empirical time series data of $RV_t$ used as input for the QCL. (Red line) QCL outputs $\overline{RV_t}$ after optimization.\label{fig3}}
+\end{figure}   
+\unskip
+
+% -------------------------------------------------------
+\section{Properties of the Predicted Time Series}
+% -------------------------------------------------------
+ 
+To investigate the statistical properties of the QCL model,
+we generate 50,000 time steps of predicted data
+by the QCL model with the optimized parameters $\boldsymbol{\theta}$.
+%まず初めにQCLモデルは一期前のinputデータから次の実現ボラティリティ値を予測する。予測された実現ボラティリティ値から以下の様に収益率が予測される。
+\hl{The QCL model first predicts the next realized volatility $\overline{\mathrm{RV}}_t$ using the input data from the previous period. Based on the predicted realized volatility, the corresponding return $\overline{R}_t$ is then computed as follows. }
+\begin{equation}
+  \overline{R}_t = \overline{\mathrm{RV}}_t^{1/2}\,\epsilon_t,
+  \label{eq:return_sim}
+\end{equation}
+where $\epsilon_t \sim \mathcal{N}(0,1)$.
+%そして、予測された収益率と実現ボラティリティをインプットデータとして次の収益率と実現ボラティリティを予測する。
+
+\hl{Using the predicted return $\overline{R}_t$ and realized volatility $\overline{\mathrm{RV}}_t$ as new input data, the model proceeds to forecast the subsequent return and realized volatility.}
+%eq.(\ref{eq:return_sim}の表式は実証的事実、すなわち収益率を実現ボラティリティで正規化した値がガウス分布になるという結果を反映している。そして、実現ボラティリティが変動することによって収益率分布はファットテイルになることが可能である。例えば、実現ボラティリティの分布が逆γ分布である場合、収益率分布はスチューデント分布となる。
+
+\hl{The formulation in Eq. (\mbox{\ref{eq:return_sim}}) reflects the empirical observation that returns normalized by realized volatility follow a Gaussian distribution\mbox{\cite{andersen2000exchange,andersen2007no,takaishi2012finite}}. Consequently, the fluctuations in realized volatility allow the return distribution to exhibit fat tails. For instance, if the realized volatility follows an inverse-gamma distribution\footnote{\hl{The empirical results support that the distribution of realized volatility follows an inverse gamma distribution\mbox{\cite{takaishi2010analysis}}.}}, the resulting return distribution corresponds to a Student's t-distribution.}
+
+
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{n913-rstand-xpred2-2.eps}
+\caption{The predicted return
+series $\overline{R_t}$ (red line) and the input data $R_t$ (black line)
+\label{fig3}}
+\end{figure}   
+%\unskip
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{n913-ystand-ypred2.eps}
+\caption{The predicted volatility series $\overline{\mathrm{RV}}_t$ (red line) and
+the input $\mathrm{RV}_t$ (black line).
+\label{fig4}}
+\end{figure}   
+%\unskip
+ 
+Figure~5 shows the first 25,000 observations of the predicted return
+series $\overline{R_t}$ (red line), together with the 913 observations of
+the input data $R_t$ (black line) used for parameter optimization. 
+Similarly, Figure~6 displays the
+predicted volatility series $\overline{\mathrm{RV}}_t$ (red line) and
+the input $\mathrm{RV}_t$ (black line).
+
+%一般化ハースト指数h(q)はeq.(\ref{scaling})で表される揺らぎ関数のスケーリング指数として得られる。図３は揺らぎ関数の代表例としてビットコイン収益率時系列の揺らぎ関数をlog-logプロットで図示している。本研究では、q=[-5,5]の範囲で、$\Delta q=0.02$のステップで揺らぎ関数を計算した。図3では煩雑さを避けるために$\Delta q=0.1$のステップでの結果のみをプロットしてある。図からsの大きい領域で線形性が見られることが分かる。ここでは、s>=20の領域においてフィッティングを行い、スケーリング指数としてh(q)を求めた。
+\hl{The generalized Hurst exponent $h(q)$ is obtained as the scaling exponent of the fluctuation function defined in Eq. (\mbox{\ref{eq:scaling}}). Figure~\mbox{\ref{fig:fluctuation}} shows a log-log plot of the fluctuation function for the Bitcoin return time series as a representative example. In this study, we computed the fluctuation function for $q$ in the range $[-5, 5]$ with a step size of $\Delta q = 0.02$. In Figure~\mbox{\ref{fig:fluctuation}}, for the sake of clarity, we only plot the results with a step size of $\Delta q = 0.1$. The figure demonstrates linearity in the region of large $s$. We performed the linear fitting in the region $s \geq 20$ to estimate the scaling exponent $h(q)$.}
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{Fqs-rstand-f4.eps}
+\caption{\hl{The fluctuation function obtained from the empirical return time series. 
+The fluctuation functions are plotted with a step size of $\Delta q=0.1$ in $q=[-5,5]$.}
+\label{fig:fluctuation}}
+\end{figure}   
+%\unskip
+ 
+The generalized Hurst exponent $h(q)$ of the 50,000-observation time series is
+estimated using a rolling-window approach with a window size of 913
+observations and a step size of 365 observations. 
+%結果をランダムな時系列のものと比較するために、各ウインドウのデータをランダムにシャッフルした20個の時系列データを作成し、それらの一般化ハースト指数を求め、平均化した。
+\hl{To compare with random time series, we generated 20 surrogate time series by randomly shuffling the data within each window. We then computed the generalized Hurst exponent for each surrogate time series and averaged the results.}
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{h2-xpred2-shuffled.eps}
+\caption{Time variation of the Hurst exponent $h(2)$ for the
+predicted and shuffled return series. \hl{The blue symbols with error bars in the figure indicate the typical magnitude of the fitting errors.}
+\label{fig6}}
+\end{figure}   
+%\unskip
+ 
+Figure~8 shows the time variation of the Hurst exponent $h(2)$ for the
+predicted and shuffled return series, analyzed by the rolling window method. 
+The values fluctuate around $0.5$, indicating that the
+predicted return series is approximately random~\footnote{Empirical studies have shown that, in most developed markets, the Hurst exponent of asset returns is close to 0.5, corresponding to a random time series; however, it has also been reported that some developed markets exhibit anti-persistent behavior, with Hurst exponents below 0.5~\cite{MATTEO2005827,takaishi2022time}.}, consistent with the
+empirical behavior of Bitcoin returns reported in recent studies~\cite{takaishi2018,takaishi2019market,takaishi2021time}. The
+$h(2)$ value of the empirical return series used as input data is
+also close to $0.5$ (Table~1).
+
+
+%\begin{table}[H] 
+%\small % Change table font size
+%\caption{$h(2)$, $\Delta h(5)$, and $\Delta \alpha(5)$ for empirical ( input ) return, IRV, and IAR time series.\label{tab1}}
+
+%\begin{tabularx}{\textwidth}{CCCC}
+%\toprule
+% &   $h(2)$ 	& $\Delta h(5)$ &  $\Delta \alpha(5)$\\
+%\midrule
+%%Return	&  0.504		&  0.301 &  0.564 \\
+%Return (Shuffled) &  0.498(11)			&  0.096(16) & 0.189(19) \\
+%%\midrule
+%IRV		&  0.155 		&  0.086 & 0.173 \\
+%IRV (Shuffled) &  0.516(11)			&  0.055(16) &  0.119(21)\\
+%%\midrule
+%IAR		&  0.030 		&  0.107 & 0.202 \\
+%IAR (Shuffled) &  0.494(14)		&  0.059(21) &  0.122(25) \\
+%\bottomrule
+%\end{tabularx}
+%\end{table}
+
+
+\begin{table}[H] 
+%\small % Change table font size
+\caption{\hl{$h(2)$ for empirical ( input ) return, IRV, and IAR time series.}\label{tab1}}
+
+\begin{tabularx}{\textwidth}{CC}
+\toprule
+ &   $h(2)$ \\
+\midrule
+Return	&  0.504(5)		 \\
+Return (Shuffled) &  0.498(11)			 \\
+\midrule
+IRV		&  0.155(2) 		 \\
+IRV (Shuffled) &  0.516(11)			\\
+\midrule
+IAR		&  0.030(1) 		 \\
+IAR (Shuffled) &  0.494(14)		 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+
+
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{hq-d100-xpred2.eps}
+\caption{$h(q)$ of the QCL-predicted and shuffled return time series in a representative window.
+\hl{The blue symbol with error bars in the figure indicates the typical magnitude of the fitting error.}
+\label{fig5}}
+\end{figure}   
+%\unskip
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{alpha-d100-xpred2.eps}
+\caption{$f(\alpha)$ of the QCL-predicted and shuffled return time series in a representative window.
+\label{fig5}}
+\end{figure}   
+%\unskip
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{tau-d100-xpred2.eps}
+\caption{$\tau(q)$ of the predicted return time series in a representative window.
+\label{fig5}}
+\end{figure}   
+%\unskip
+
+ 
+Figures~9--11 display $h(q)$, $\alpha(q)$, and $\tau(q)$ for the QCL-predicted return
+series in a representative window.
+%The results obtained from the shuffled time series are labeled ``Shuffled''. 
+The variation of $h(q)$ with $q$ seems to show 
+multifractality in the predicted return series, and  after shuffling, the
+$q$-dependence of $h(q)$ is reduced but not eliminated. Both $f(\alpha)$ and $\tau(q)$ also exhibit similar multifractal properties. 
+
+%しかしながら、有限の時系列長からなるデータは有限サイズの効果によって疑似的なマルチフラクタル性が現れることが知られている。そこで、本研究で用いている時系列長での有限サイズ効果の大きさを見積もるために、時系列長n=913の200個のガウス時系列を生成し、それらの $h(q)$, $\alpha(q)$及び$\tau(q)$を求め、図10～12にプロットした。図のスケールは比較のために図７～９と同じにしている。図7～９と図10～12との比較すると、ガウス時系列は本来モノフラクタル時系列であるが、有限サイズ効果によってマルチフラクタル性を示すようになっている。しかし、図7～９と比較するとマルチフラクタル性は小さく、図7～９の結果は有限サイズ効果より大きなマルチフラクタル性の存在が示唆される。
+\hl{However, it is known that finite-size effects in time series of finite length can lead to the emergence of spurious multifractality~\mbox{\cite{zhou2012finite,grech2012multifractal,grech2013multifractal}}. To estimate the magnitude of these effects for the time series length used in this study, we generated 200 Gaussian time series with a length of $n = 913$, computed their $h(q)$, $\alpha(q)$, and $\tau(q)$ values, and plotted the results in Figures~12-–14. For comparison, the scales in these figures were set to be identical to those in Figures~9-–11. It is observed that while Gaussian time series are inherently monofractal, they exhibit multifractality due to finite-size effects. Comparing Figures~9–-11 with Figurs~ 12–-14, the degree of multifractality in the original time series is smaller in the Gaussian case, suggesting that the results presented in Figures~7-–9 indicate the possibility of the presence of multifractality beyond what can be attributed to finite-size effects.}
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{randomf1000-confi.eps}
+\caption{\hl{$h(q)$ of Gaussian random time series from 200 samples. The width in the figure represents the standard deviation.}
+\label{fig5}}
+\end{figure}   
+%\unskip
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{fa-randomd200.eps}
+\caption{\hl{$f(\alpha)$ of  Gaussian random time series.  $f(\alpha)$ was obtained from $h(q)$ shown in Figure~12 numerically.}
+\label{fig5}}
+\end{figure}   
+%\unskip
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{tau-randomd200.eps}
+\caption{\hl{$\tau(q)$ of Gaussian random time series from 200 samples. The width in the figure represents the standard deviation.}
+\label{fig5}}
+\end{figure}   
+%\unskip
+
+
+
+%マルチフラクタル性のソースとして時系列の分布のファットテイル性が影響することが報告されている。時系列をシャッフルすることによって時系列相関を無くし、マルチフラクタル性の起源として時系列相関と分布形の寄与を分離することができると期待されるが、最近の研究によって真のマルチフラクタル性は非線形な時間的相関によってのみ生じることが報告されており、シャッフリングプロセスのみよってマルチフラクタル性の起源を議論することは困難である。従って、本研究ではオリジナル時系列とシャフル時系列の結果のみを報告する。
+\hl{It has been reported that the fat-tailed nature of the distribution in a time series can act as a source of multifractality~\mbox{\cite{kantelhardt2002multifractal}} (Table~2 shows the kurtosis of return, IRV and IAR times series analysed in this study.). Although shuffling a time series eliminates temporal correlations and is expected to allow for the separation of contributions from temporal correlations and distribution shapes as the origin of multifractality, recent studies have reported that true multifractality arises solely from non-linear temporal correlations~\mbox{\cite{kwapien2023genuine,kluszczynski2025disentangling}}. Consequently, it is difficult to discuss the origin of multifractality based solely on the shuffling process. Therefore, this study only reports the results for the original and shuffled time series.}
+
+
+%It is well known that the sources of multifractality in time series include not only temporal correlations but also the shape of the underlying distribution~\cite{kantelhardt2002multifractal}. Table~2 summarizes the kurtosis of 
+%the time series analyzed in this study. 
+%Return time series of input data and QCL predictions exhibit  kurtosis greater than three, implying heavier tails than the Gaussian distribution. 
+%Thus this heavy-tailed structure likely contributes to the observed multifractality and is consistent with the fact that financial returns are typically fat-tailed\cite{Cont2001QF} and 
+%an emprical study on multifractal properties on stock and commodity markets~\cite{matia2003multifractal}.
+
+\begin{table}[H]
+\caption{Kurtosis of Return, IRV and IAR time series.\label{tab2}}
+%} % If the paper is ``preprints'', please uncomment this parenthesis.
+%\isPreprints{\begin{tabularx}{\textwidth}{CCCC}}{% This command is only used for ``preprints''.
+%	\begin{tabularx}{\fulllength}{CCC}
+\begin{tabularx}{\textwidth}{CCC}
+%} % If the paper is ``preprints'', please uncomment this parenthesis.
+			\toprule
+		& Input (empirical) data	& QCL prediction    \\
+			\midrule
+Return	& 5.79(60) 		& 15.7(33)			\\
+IRV   & 4.43(87)	   & 4.55(7)			\\
+IAR   & 4.40(42)	   & 4.35(10)			\\
+                                
+			\bottomrule
+		\end{tabularx}
+%		\isPreprints{}{% This command is only used for ``preprints''.
+%} % If the paper is ``preprints'', please uncomment this parenthesis.
+%	\noindent{\footnotesize{* Tables may have a footer.}}
+\end{table}
+
+
+
+
+
+
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{hq-rstand.eps}
+\caption{$h(q)$ of the empirical (input) return time series.
+\hl{The blue symbol with error bars in the figure indicates the typical magnitude of the fitting error.}
+\label{fig11}}
+\end{figure}   
+%\unskip
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{alpha-rstand.eps}
+\caption{$f(\alpha)$ of the empirical (input) return time series.
+\label{fig12}}
+\end{figure}   
+%\unskip
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{tau-rstand.eps}
+\caption{$\tau(q)$ of the empirical (input) return time series.
+\label{fig13}}
+\end{figure}   
+%\unskip
+
+
+
+Figures~15--17 display  $h(q)$, $f(\alpha)$, and  $\tau(q)$ for the empirical return time series used as input. The multifractal characteristics of the empirical data closely resemble those of the time series generated by the QCL model, demonstrating that the model  \hl{reproduces the qualitatively similar multifractal features of empirical returns}.
+
+%%%%%%%%%%%%%%
+%To compare the strength of multifractality between the return time series and its shuffled counterpart, we set $q = 5$ and computed $\Delta h(q)$ and $\Delta \alpha(q)$ using a rolling-window procedure. Figure~13 illustrates the temporal evolution of $\Delta h(5)$. Although the shuffled series exhibits a smaller $\Delta h(5)$ than the original series, the value remains finite, indicating that multifractality persists even after temporal correlations are removed by shuffling. Figure~14 presents $\Delta \alpha(5)$, which shows a pattern consistent with that of $\Delta h(5)$.
+%The fact that the shuffled series still yields finite values of $\Delta h(q)$ and $\Delta \alpha(q)$ further indicates that the shape of the return distribution contributes to the multifractality observed in the original time series.
+
+%\begin{figure}[H]
+%\centering
+%\isPreprints{\centering}{} % Only used for preprints
+%\includegraphics[width=9.0 cm]{dh5-xpred2-shuffled.eps}
+%\caption{Temporal evolution of $\Delta h(5)$ for return time series. \label{fig12}}
+%\end{figure}
+%\unskip
+
+%\begin{figure}[H]
+%\centering
+%\isPreprints{\centering}{} % Only used for preprints
+%\includegraphics[width=9.0 cm]{da5-xpred2-shuffled.eps}
+%\caption{Temporal evolution of $\Delta \alpha(5)$ for return time series.
+%\label{fig13}}
+%\end{figure}   
+%\unskip
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Next, the same multifractal analysis is applied to the increment series of realized
+volatility (IRV), defined as
+\begin{equation}
+  \mathrm{IRV}_t = \ln\mathrm{RV}_t - \ln\mathrm{RV}_{t-1}.
+  \label{eq:irv}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{h2-ypred2-shuffled2.eps}
+\caption{Hurst exponent $h(2)$ of the IRV time series and those of the shuffled time series.
+\hl{For QCL predictions, the typical magnitude of the fitting error is on the order of the symbol size or smaller.}
+\label{fig13}}
+\end{figure}   
+%\unskip 
+ Figure~18 shows the Hurst exponent $h(2)$ of the IRV series, with
+values in the range $h(2) \approx 0.05$--$0.1$ (on average $\sim 0.07$), well below the random
+benchmark of $0.5$. This clearly confirms the presence of \emph{anti-persistence},
+consistent with the rough-volatility characteristics observed in the real financial data of Bitcoin~\cite{takaishi2020rough}.
+After shuffling, $h(2)$ reverts to approximately $0.5$,
+demonstrating that the anti-persistence is attributable to the temporal
+correlation structure of the time series.
+
+ 
+
+
+%%%%%%%%%%%%%%%
+RV requires high-frequency data for accurate construction; however, when such data are unavailable, the absolute value of daily returns is often used as a proxy for volatility. In relation to RV, the square of the absolute daily return corresponds to the case in which RV is constructed using only a single intraday observation. Let $|R_t|$ denote the absolute daily return. The increment series of absolute returns, denoted $\mathrm{IAR}_t$, is defined as
+\begin{equation}
+    \mathrm{IAR}_t = \ln |R_t| - \ln |R_{t-1}|.
+    \tag{34}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{n913-h2-abs-xpred2-shuffled2.eps}
+\caption{Hurst exponent $h(2)$ of the IAR time series and those of the shuffled time series.
+\hl{For QCL predictions, the typical magnitude of the fitting error is on the order of the symbol size or smaller.}
+\label{fig14}}
+\end{figure}   
+%\unskip 
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{h2-RV-absRet.eps}
+\caption{Comparison of the Hurst exponent $h(2)$ computed for the IRV and IAR time series.
+\hl{The typical magnitude of the fitting error is on the order of the symbol size or smaller.}}
+\end{figure}   
+%\unskip 
+
+Figure~19 plots the Hurst exponent of the increment series $\mathrm{IAR}$. The estimated values fall within the range $h(2) \approx 0.04$--$0.07$ (on average $\sim 0.05$), indicating anti-persistent behavior. These values are smaller than those obtained for the IRV (see also Figure~20). Prior studies~\cite{garcin2022long,takaishi2025multifractality} examining RV constructed with varying sampling frequencies report that the estimated Hurst exponent decreases as the number of intraday observations used in RV construction becomes smaller. The present results are consistent with this empirical regularity.
+
+Next, we investigate the multifractal properties of the IRV series. Figure~21 displays the generalized Hurst exponent $h(q)$ for both the QCL-predicted IRV series and its shuffled counterpart within a representative window. The IRV series exhibits a monotonically decreasing $h(q)$ as $q$ increases, demonstrating clear multifractality. Although the shuffled series shows $h(2)$ values shifted toward $0.5$, consistent with random behavior, its $h(q)$ still decreases monotonically with $q$, indicating that multifractality persists even after temporal correlations are removed. Comparing the variation range of $h(q)$ between the IRV and shuffled series reveals that the width of the $h(q)$ spectrum remains largely unchanged.
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{n913-d135-hq-ypred2-ret.eps}
+\caption{$h(q)$ of the IRV time series in a representative window.
+\hl{The blue symbol with error bars in the figure indicates the typical magnitude of the fitting error.}}
+\end{figure}   
+%\unskip 
+
+Figure~22 presents the singularity spectra $f(\alpha)$ computed for the IRV time series and its shuffled counterpart within a representative window. Both $f(\alpha)$ exhibit a finite width in $\alpha$, indicating
+that each series possesses multifractal characteristics. 
+
+A similar pattern is observed for $\tau(q)$: in both the original and shuffled series, $\tau(q)$ remains nonlinear, further confirming the presence of multifractality (Figure~23).
+%シャッフルした後、$f(\alpha)$のピークの位置が移動しているが、これはピーク値を与える$h(0)$の値がシャッフル後に大きくなっているためである。同様に、シャフルした後 $\tau(q)$の傾きが大きくなっているが、これは$\tau(q)$のス傾きの大きさを近似的に表す$h(q)$値が図？？から分かるようにシャッフル後に大きくなっているからである。
+\hl{After shuffling, the position of the peak in $f(\alpha)$ shifts. This is because the value of $h(0)$, which corresponds to the peak position, increases after the shuffling process. Similarly, the slope of $\tau(q)$ becomes steeper after shuffling; this is attributed to the fact that the values of $h(q)$, which approximately represent the magnitude of the slope of $\tau(q)$, increase after shuffling, as shown in Figure~23.}
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{n913-d135-alpha-ypred2-ret.eps}
+\caption{$f(\alpha)$ of the IRV time series in a representative window.}
+\end{figure}   
+%\unskip 
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{n913-d135-tau-ypred2-ret.eps}
+\caption{$\tau(q)$ of the IRV time series in a representative window.}
+\end{figure}   
+%\unskip 
+
+
+Figures~24--27 present the multifractal analysis results of $h(q)$, $f(\alpha)$, and $\tau(q)$ for the IRV time series constructed from the RV data used as input to the QCL model. The input data exhibit multifractal behavior similar to that observed in the QCL-generated time series (Figures~21--23), \hl{demonstrating that the multifractal characteristics of the empirical IRV series are similar to those by the QCL model.}
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{hq-ystand-ret.eps}
+\caption{$h(q)$ of the IRV time series computed from the input data
+\hl{The blue symbol with error bars in the figure indicates the typical magnitude of the fitting error.}}
+\end{figure}   
+%\unskip 
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{alpha-ystand-ret.eps}
+\caption{$f(\alpha)$ of the IRV time series  computed from the input data}
+\end{figure}   
+%\unskip 
+
+\begin{figure}[H]
+\centering
+%\isPreprints{\centering}{} % Only used for preprints
+\includegraphics[width=9.0 cm]{tau-ystand-ret.eps}
+\caption{$\tau(q)$ of the IRV time series computed from the input data}
+\end{figure}   
+%\unskip 
+
+%Figure~24 illustrates the temporal evolution of $\Delta h(5)$. Although the values of $\Delta h(5)$ for the shuffled series are slightly smaller than those of the original IRV series, they remain strictly finite, demonstrating that multifractality persists even after temporal correlations are removed. Figure~25 shows $\Delta \alpha(5)$, which exhibits the same qualitative behavior: the shuffled series displays somewhat reduced values compared with the original IRV series, yet the values remain finite. These findings indicate that multifractality survives the shuffling procedure, implying that the IRV series contains sources of multifractality beyond temporal correlations.
+%\begin{figure}[H]
+%\centering
+%\isPreprints{\centering}{} % Only used for preprints
+%\includegraphics[width=9.0 cm]{dh5-ypred2-shuffled.eps}
+%\caption{Time evolution of $\Delta h(5)$ for the QCL-predicted IRV time series }
+%\end{figure}   
+%\unskip 
+
+%\begin{figure}[H]
+%\centering
+%\isPreprints{\centering}{} % Only used for preprints
+%\includegraphics[width=9.0 cm]{da5-ypred2-shuffled.eps}
+%\caption{Time evolution of $\Delta \alpha(5)$ for the QCL-predicted IRV time series}
+%\end{figure}   
+%\unskip 
+
+Overall, our results demonstrate that the QCL-generated time series \hl{qualitatively reproduces empirical properties of Bitcoin volatility, including anti-persistence and multifractality in IRV}.
+
+
+% -------------------------------------------------------
+\section{Discussion and Conclusions}
+% -------------------------------------------------------
+ 
+This study applies the QCL to approximate
+the RV time series of Bitcoin and subjects the
+resulting predicted series to multifractal analysis. We discuss the
+significance and interpretation of the results below.
+ 
+\paragraph{Effectiveness of QCL for volatility approximation.}
+As shown in Figure~4, the optimized quantum circuit reproduces the
+broad temporal variation of the empirical RV series. Unlike GARCH-type
+models, which require a pre-specified functional form, the present
+approach directly approximates the volatility function from data,
+eliminating the need for model selection. A limitation, however, is
+that the single-qubit, three-parameter circuit employed here has
+limited expressive power; deeper multi-qubit circuits or data re-uploading technique~\cite{perez2020data,perez2021one} may yield
+improved approximation accuracy.
+ 
+\paragraph{Hurst exponent and randomness of the return series.}
+\hl{The Hurst exponent $h(2)$ of the predicted return series fluctuates
+around $0.5$ (Figure~8), indicating near-random behavior consistent
+%with the efficient market hypothesis~\cite{fama1965behavior,Fama1970efficient,samuelson2016proof} and 
+with recent empirical findings
+for Bitcoin~\mbox{\cite{takaishi2018,takaishi2019market,takaishi2021time}}}. The input data exhibit the same tendency (Table~1),
+confirming that the QCL model replicates this
+property.
+ 
+\paragraph{Multifractality of the return time series.}
+ Multifractality in $h(q)$ is observed for the predicted return series
+(Figure~9), and partial multifractality persists even after shuffling
+(Figures~9--11). \hl{However, analysis based on finite-length Gaussian random time series (Figures~12--14) indicates the presence of multifractality arising from finite-size effects, suggesting that the partial multifractality observed after shuffling can be attributed to such finite-size effects.}
+%しかしながら、ガウシアンランダム時系列を用いた有限時系列長での解析から（図12～14)、有限サイズ効果によるマルチフラクタル性が存在しているので、シャッフリングの後に観測された部分的マルチフラクタル性は有限サイズ効果による影響が考えられる。
+
+Analogous results are obtained for the original data (Figures~15--17),
+confirming that the QCL model reproduces the multifractal
+structure of the empirical return time series.
+ 
+\paragraph{Anti-persistence of IRV.}
+The IRV series exhibits $h(2) \approx 0.05$--$0.1$ (Figure~18),
+consistent with the rough volatility findings of Gatheral et
+al.~\cite{gatheral2018volatility}. This anti-persistence is reproduced by the
+QCL model, and the reversion of $h(2)$ to approximately
+$0.5$ after shuffling (Figure~18) clearly attributes the
+anti-persistence to temporal correlations. The smaller $h(2)$ values
+of the IAR time series relative to IRV (Figure~20) are consistent with the
+finding that \hl{the RV from} fewer intraday samples produce lower Hurst exponents~\cite{takaishi2025multifractality}.
+ 
+%\paragraph{Multifractality of IRV.}
+%The IRV series exhibits $q$-dependent $h(q)$, $f(\alpha)$, and $\tau(q)$ (Figure~18--20), and the
+%shuffled time series retains substantial multifractality (Figures~24--25),
+%%as reflected by finite $\Delta h(5)$ and $\Delta\alpha(5)$ values.
+%This implies that the heavy-tailed distribution of IRV (kurtosis
+%$\approx 5$; Table~2) constitutes an independent source of
+%multifractality beyond temporal correlations.
+ 
+
+\paragraph{Comparison and future directions.}
+The QCL model qualitatively reproduces the major \hl{multifractal}
+properties of the empirical Bitcoin RV series: near-random return
+dynamics ($h(2) \approx 0.5$), multifractality of returns, and
+anti-persistence of IRV ($h(2) \approx 0.05 \sim 0.1$). 
+
+\hl{It is noted that the present model adopts a single-qubit parameterized quantum circuit with a highly simplified structure, inspired by classical parsimonious models such as GARCH(1,1), which successfully capture some stylized facts of financial markets using only a small number of parameters. The primary objective of this study is to examine whether such a minimal QCL framework can reproduce the essential statistical properties of financial time series. On the other hand, it may also constrain the expressive power of the model. Therefore, extensions to deeper architectures and multi-qubit circuits are expected to be necessary for enhancing representational capacity, which we leave for future investigation.
+Furthermore, demonstrating the practical utility of the proposed approach requires systematic benchmarking against established models, including GARCH, HAR, and Realized GARCH, as well as thorough evaluation in tasks such as volatility forecasting. Such analyses are beyond the scope of the present study and are reserved for future work. Accordingly, this study should be regarded as an initial step toward assessing the capability of QCL to capture statistical properties of financial time series, while comprehensive performance comparisons and applications to forecasting and risk management remain important directions for future research.}
+
+
+\hl{Additional future directions include confirmation of empirical facts
+observed in financial asset prices—such as} the Taylor
+effect~\cite{takaishi2018taylor}, the leverage
+effect~\cite{Black1976,Christie1982stochastic,
+bouchaud2001leverage,qiu2006return,shen2009return,takaishi2020power}, the
+Zumbach
+effect~\cite{zumbach2003volatility,zumbach2009time,el2020zumbach}, and the
+inverse cubic law in return
+distributions~\cite{gopikrishnan1998inverse}—as well as applications to
+other asset classes (equities, foreign exchange, and commodities) to
+assess the generality of the approach.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% optional
+%\supplementary{The following supporting information can be downloaded at:  \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title.}
+
+% Only for journal Methods and Protocols:
+% If you wish to submit a video article, please do so with any other supplementary material.
+% \supplementary{The following supporting information can be downloaded at: \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title. A supporting video article is available at doi: link.}
+
+% Only used for preprtints:
+% \supplementary{The following supporting information can be downloaded at the website of this paper posted on \href{https://www.preprints.org/}{Preprints.org}.}
+
+% Only for journal Hardware:
+% If you wish to submit a video article, please do so with any other supplementary material.
+% \supplementary{The following supporting information can be downloaded at: \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title.\vspace{6pt}\\
+%\begin{tabularx}{\textwidth}{lll}
+%\toprule
+%\textbf{Name} & \textbf{Type} & \textbf{Description} \\
+%\midrule
+%S1 & Python script (.py) & Script of python source code used in XX \\
+%S2 & Text (.txt) & Script of modelling code used to make Figure X \\
+%S3 & Text (.txt) & Raw data from experiment X \\
+%S4 & Video (.mp4) & Video demonstrating the hardware in use \\
+%... & ... & ... \\
+%\bottomrule
+%\end{tabularx}
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\funding{This research was funded by JSPS KAKENHI Grant Numbers 26K04856.}
+
+
+%\dataavailability{We encourage all authors of articles published in MDPI journals to share their research data. In this section, please provide details regarding where data supporting reported results can be found, including links to publicly archived datasets analyzed or generated during the study. Where no new data were created, or where data is unavailable due to privacy or ethical restrictions, a statement is still required. Suggested Data Availability Statements are available in section ``MDPI Research Data Policies'' at \url{https://www.mdpi.com/ethics}.} 
+
+%\durcstatement{Current research is limited to the [please insert a specific academic field, e.g., XXX], which is beneficial [share benefits and/or primary use] and does not pose a threat to public health or national security. Authors acknowledge the dual-use potential of the research involving xxx and confirm that all necessary precautions have been taken to prevent potential misuse. As an ethical responsibility, authors strictly adhere to relevant national and international laws about DURC. Authors advocate for responsible deployment, ethical considerations, regulatory compliance, and transparent reporting to mitigate misuse risks and foster beneficial outcomes.}
+
+% Only for journal Nursing Reports
+%\publicinvolvement{Please describe how the public (patients, consumers, carers) were involved in the research. Consider reporting against the GRIPP2 (Guidance for Reporting Involvement of Patients and the Public) checklist. If the public were not involved in any aspect of the research add: ``No public involvement in any aspect of this research''.}
+%
+%% Only for journal Nursing Reports
+%\guidelinesstandards{Please add a statement indicating which reporting guideline was used when drafting the report. For example, ``This manuscript was drafted against the XXX (the full name of reporting guidelines and citation) for XXX (type of research) research''. A complete list of reporting guidelines can be accessed via the equator network: \url{https://www.equator-network.org/}.}
+%
+%% Only for journal Nursing Reports
+%\useofartificialintelligence{Please describe in detail any and all uses of artificial intelligence (AI) or AI-assisted tools used in the preparation of the manuscript. This may include, but is not limited to, language translation, language editing and grammar, or generating text. Alternatively, please state that “AI or AI-assisted tools were not used in drafting any aspect of this manuscript”.}
+
+\acknowledgments{Numerical calculations for this work were carried out at the facilities of the Institute of Statistical Mathematics.}
+
+\conflictsofinterest{The author declares no conflicts of interest. } 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Optional
+
+%% Only for journal Encyclopedia
+%\entrylink{The Link to this entry published on the encyclopedia platform.}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Optional
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\isPreprints{}{% This command is only used for ``preprints''.
+%\begin{adjustwidth}{-\extralength}{0cm}
+%} % If the paper is ``preprints'', please uncomment this parenthesis.
+%\printendnotes[custom] % Un-comment to print a list of endnotes
+
+\reftitle{References}
+
+% Please provide either the correct journal abbreviation (e.g. according to the “List of Title Word Abbreviations” http://www.issn.org/services/online-services/access-to-the-ltwa/) or the full name of the journal.
+% Citations and References in Supplementary files are permitted provided that they also appear in the reference list here. 
+
+%=====================================
+% References, variant A: external bibliography
+%=====================================
+% \bibliography{your_external_BibTeX_file}
+\bibliography{mybibfile.bib}
+%\bibliography{QCLFractal.bbl}
+%=====================================
+% References, variant B: internal bibliography
+%=====================================
+
+
+%% -------------------------------------------------------
+%  References (placeholder)
+%% -------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+% For the MDPI journals use author-date citation, please follow the formatting guidelines on http://www.mdpi.com/authors/references
+% To cite two works by the same author: \citeauthor{ref-journal-1a} (\citeyear{ref-journal-1a}, \citeyear{ref-journal-1b}). This produces: Whittaker (1967, 1975)
+% To cite two works by the same author with specific pages: \citeauthor{ref-journal-3a} (\citeyear{ref-journal-3a}, p. 328; \citeyear{ref-journal-3b}, p.475). This produces: Wong (1999, p. 328; 2000, p. 475)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% for journal Sci
+%\reviewreports{\\
+%Reviewer 1 comments and authors’ response\\
+%Reviewer 2 comments and authors’ response\\
+%Reviewer 3 comments and authors’ response
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\PublishersNote{}
+%\isPreprints{}{% This command is only used for ``preprints''.
+%\end{adjustwidth}
+%} % If the paper is ``preprints'', please uncomment this parenthesis.
+\end{document}
+
